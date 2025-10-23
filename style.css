@@ -345,3 +345,12 @@ footer {
   background: rgba(250, 230, 230, 0.85);
 }
 
+#gameCanvas {
+  border: 3px solid maroon;
+  background: #f6f0e6;
+  display: block;
+  margin: 20px auto;
+  width: 100%;    /* fill parent/container */
+  max-width: 1200px; /* optional max width */
+  height: 75vh;   /* optional fixed height */
+}

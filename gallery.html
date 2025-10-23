@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery — Anya Brewer</title>
+  <title>Gallery Game — Anya Brewer</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cardo&display=swap" rel="stylesheet">
 </head>
@@ -14,20 +14,26 @@
     <a href="commissions.html">Commissions</a>
   </nav>
 
-  <section class="gallery">
-    <h2 style="color: maroon;">Artworks</h2>
-    <p class="gallery-intro">
-      These are examples of my art from past art trades and personal projects!
-    </p>
-    <div class="art-grid">
-      <img src="img/vampire.PNG" alt="Vampire Couple">
-      <img src="img/Girl.PNG" alt="Fairy in Woods">
-      <img src="img/duo.PNG" alt="Couple Getting Ready in Mirror">
-      <img src="img/furry.PNG" alt="Magic Creature Walking On Water">
-      <img src="img/hvac.PNG" alt="Alien">
-      <img src="img/lady.png" alt="Nature Spirit on Rock">
-    </div>
+  <section class="gallery-game">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="artInfo" class="art-info"></div>
   </section>
 
+  <section class="gallery">
+  <h2 style="color: maroon;">Artworks</h2>
+  <p class="gallery-intro">
+    These are examples of my art from past art trades and personal projects!
+  </p>
+  <div class="art-grid">
+    <img src="img/vampire.PNG" alt="Vampire Couple">
+    <img src="img/Girl.PNG" alt="Fairy in Woods">
+    <img src="img/duo.PNG" alt="Couple Getting Ready in Mirror">
+    <img src="img/furry.PNG" alt="Magic Creature Walking On Water">
+    <img src="img/hvac.PNG" alt="Alien">
+    <img src="img/lady.png" alt="Nature Spirit on Rock">
+  </div>
+</section>
+
+  <script src="game.js"></script>
 </body>
 </html>
