@@ -1,0 +1,347 @@
+/* 🌷 Floral Whimsy Theme — Shared Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cardo", serif;
+  background: radial-gradient(circle at top, #fdf8f5 0%, #f3e6e0 100%);
+  color: #3b2c2a;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 1px;
+  color: #fffdfc;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(120, 90, 80, 0.4), rgba(90, 60, 50, 0.5)),
+    url("img/vampire.PNG") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fffaf7;
+  text-shadow: 0 0 10px rgba(255, 235, 230, 0.8);
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #c76b82, #e8a2b5);
+  color: #fffaf2;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(233, 174, 194, 0.5);
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #e8a2b5, #f5c8d0);
+  box-shadow: 0 0 20px rgba(250, 210, 225, 0.7);
+  transform: scale(1.05);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(230, 190, 190, 0.85);
+  padding: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgba(255, 230, 230, 0.5);
+}
+
+.nav a {
+  color: #5e3a3a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+  color: #a94d68;
+  text-shadow: 0 0 6px rgba(255, 204, 218, 0.8);
+}
+
+/* About */
+.about {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 250, 250, 0.85);
+  border: 2px solid #e1b9b9;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(180, 140, 140, 0.1);
+}
+
+/* Gallery */
+.gallery {
+  background: linear-gradient(180deg, #f5e1e8, #f2d8cf);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 1.5rem;
+}
+
+.art-grid img {
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #d6a0a0;
+  box-shadow: 0 6px 18px rgba(180, 100, 120, 0.2);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.art-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 200, 215, 0.5);
+}
+
+/* Commissions */
+.commissions {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.commission-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 2rem;
+}
+
+.commission-card {
+  background: rgba(255, 245, 245, 0.85);
+  border: 2px solid #e1b9b9;
+  border-radius: 14px;
+  padding: 1.8rem;
+  box-shadow: 0 6px 16px rgba(160, 100, 100, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.commission-card:hover {
+  transform: translateY(-5px);
+}
+
+.commission-card h3 {
+  color: #8b4d4d;
+}
+
+.price {
+  font-weight: bold;
+  color: #b06073;
+  margin-top: 0.5rem;
+}
+
+/* Buttons */
+.contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #c76b82, #e8a2b5);
+  color: #fffaf2;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, #e8a2b5, #f7ccd5);
+  box-shadow: 0 0 20px rgba(255, 210, 220, 0.7);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #7c4a4a;
+  color: #f8e9e9;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(255, 240, 245, 0.7);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background: #fff8f8;
+  margin: 5% auto;
+  padding: 2rem;
+  border: 2px solid #e1b9b9;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 0 25px rgba(200, 140, 140, 0.3);
+  transform: scale(0.8) rotate(-10deg);
+  animation: petalSpinIn 0.7s ease forwards;
+}
+
+.modal.hide .modal-content {
+  animation: petalSpinOut 0.5s ease forwards;
+}
+
+/* Spin animations */
+@keyframes petalSpinIn {
+  0% { opacity: 0; transform: scale(0.7) rotate(-15deg); }
+  60% { opacity: 1; transform: scale(1.05) rotate(6deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes petalSpinOut {
+  0% { opacity: 1; transform: scale(1) rotate(0deg); }
+  40% { opacity: 0.8; transform: scale(0.9) rotate(10deg); }
+  100% { opacity: 0; transform: scale(0.7) rotate(-20deg); }
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 1rem;
+  color: #a14d5b;
+}
+
+.close {
+  color: #b06073;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close:hover {
+  transform: rotate(20deg) scale(1.2);
+  color: #e38ba2;
+}
+
+
+.familiar {
+  position: fixed;
+  top: 40px;    
+  left: 40px;    
+  width: 70px;
+  height: 70px;
+  background: url('img/familiar.png') no-repeat center/contain;
+  animation: flutter 7s ease-in-out infinite, softGlow 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.9;
+}
+
+@keyframes flutter {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(-15px, -10px) rotate(-6deg); }
+  50%  { transform: translate(0, -25px) rotate(8deg); }
+  75%  { transform: translate(10px, -10px) rotate(-3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes softGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px #ffc9dc); }
+  50%      { filter: drop-shadow(0 0 15px #ffdfea); }
+}
+.boundaries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.boundaries h3 {
+  font-family: "MedievalSharp", cursive;
+  color: #8b4d4d;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 5px rgba(255, 200, 210, 0.4);
+}
+
+.boundaries ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.boundaries li {
+  background: rgba(255, 245, 245, 0.8);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e1b9b9;
+  box-shadow: 0 2px 6px rgba(180, 130, 130, 0.1);
+  transition: transform 0.2s;
+}
+
+.boundaries li:hover {
+  transform: translateY(-3px);
+}
+
+.will-do li {
+  background: rgba(255, 240, 245, 0.85);
+}
+
+.wont-do li {
+  background: rgba(250, 230, 230, 0.85);
+}
+
